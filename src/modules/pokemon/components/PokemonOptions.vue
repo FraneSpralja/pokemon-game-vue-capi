@@ -2,7 +2,7 @@
     <section class="mt-5">
         <div>
             <button v-for="{ name, id } in options" :key="id" @click="selectedPokemon({ name, id })"
-                :class="[{ correct: isDisable && id === correctAnswer }, { incorrect: isDisable && selectedAnswer === id }]"
+                :class="[{ correct: isDisable && id === correctAnswer }, { incorrect: isDisable && id !== correctAnswer }]"
                 :disabled="isDisable"> {{ name
                 }}
             </button>
@@ -43,7 +43,7 @@ button {
 }
 
 button[disabled] {
-    @apply bg-gray-200 pointer-events-none cursor-none;
+    @apply bg-gray-200;
 }
 
 .incorrect[disabled] {
