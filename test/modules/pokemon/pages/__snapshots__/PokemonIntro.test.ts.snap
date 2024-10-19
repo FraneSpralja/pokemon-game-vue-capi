@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<PokemonIntro /> > should render with default values 1`] = `
+"<section data-v-e2f8eb3c="" class="flex flex-col justify-center items-center w-screen h-screen">
+  <div data-v-e2f8eb3c="" class="intro-form">
+    <div data-v-e2f8eb3c="" class="form__box"><label data-v-e2f8eb3c="" for="name">Entrenador</label><input data-v-e2f8eb3c="" type="text" name="name"></div>
+    <div data-v-e2f8eb3c="" class="form__box"><label data-v-e2f8eb3c="" for="name" class="block">Dificultad</label>
+      <div data-v-e2f8eb3c="" class="form__box--container flex"><label data-v-e2f8eb3c="">3 pokemons <input data-v-e2f8eb3c="" type="radio" value="3"></label><label data-v-e2f8eb3c="">4 pokemons <input data-v-e2f8eb3c="" type="radio" value="4"></label><label data-v-e2f8eb3c="">5 pokemons <input data-v-e2f8eb3c="" type="radio" value="5"></label><label data-v-e2f8eb3c="">7 pokemons <input data-v-e2f8eb3c="" type="radio" value="7"></label></div>
+    </div>
+    <div data-v-e2f8eb3c="" class="form__box"><button data-v-e2f8eb3c="" class="bg-blue-500 text-white p-2 rounded-md w-fit mx-auto hover:bg-blue-800"> Iniciar Batalla </button></div>
+  </div>
+</section>"
+`;

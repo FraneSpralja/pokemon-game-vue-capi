@@ -3,7 +3,7 @@ import { GameStatus, type Pokemon, type PokemonListResponse } from "../interface
 import { pokemonApi } from "../api/pokemonApi";
 import confetti from 'canvas-confetti';
 
-export const usePokemonGame = (level: number) => {
+export const usePokemonGame = (level: number = 4) => {
 
     const gameStatus = ref<GameStatus>(GameStatus.Playing)
     const pokemons = ref<Pokemon[]>([])
@@ -74,6 +74,8 @@ export const usePokemonGame = (level: number) => {
         isLoading,
         randomPokemon,
         pokemonsOptions,
+
+        // methods
         checkAnswer,
         restartGame,
     }
